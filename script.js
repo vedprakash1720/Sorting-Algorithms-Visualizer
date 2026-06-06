@@ -87,7 +87,7 @@ function drawBars(array, comparing, swapping, sorted) {
 
 function pause() {
   var speed = parseInt(document.getElementById("speedInput").value);
-  var delay = Math.round(400 / speed);
+  var delay = Math.round(500 / speed);
   return new Promise(function(resolve) {
     setTimeout(resolve, delay);
   });
