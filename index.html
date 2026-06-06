@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Sorting Visualizer</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <h2>Sorting Algorithms Visualizer</h2>
+
+    <div id="algo-section">
+        <p>Select Algorithm:</p>
+        <button onclick="selectAlgo('bubble')" id="bubble">Bubble Sort</button>
+        <button onclick="selectAlgo('selection')" id="selection">Selection Sort</button>
+        <button onclick="selectAlgo('insertion')" id="insertion">Insertion Sort</button>
+    </div>
+
+    <br>
+
+    <div id="controls">
+        <label>Array Size: <input type="range" id="sizeInput" min="10" max="60" value="30"
+                oninput="updateSize()"></label>
+        <span id="sizeDisplay">30</span>
+        &nbsp;&nbsp;
+        <label>Speed: <input type="range" id="speedInput" min="1" max="10" value="5"></label>
+        &nbsp;&nbsp;
+        <button onclick="generateArray()">Generate New Array</button>
+        <button onclick="startSort()" id="sortBtn">Sort</button>
+    </div>
+
+    <br>
+
+    <div id="info-box">
+        <span>Comparisons: <b id="comp">0</b></span>
+        &nbsp;&nbsp;
+        <span>Swaps: <b id="swap">0</b></span>
+        &nbsp;&nbsp;
+        <span>Time: <b id="time">0</b> ms</span>
+        &nbsp;&nbsp;
+        <span id="complexity"></span>
+    </div>
+
+    <br>
+
+    <div id="bar-container"></div>
+
+    <p id="status">Please select an algorithm and click Sort.</p>
+
+    <br>
+    <div id="legend">
+        <span class="leg" style="background:steelblue"></span> Normal &nbsp;
+        <span class="leg" style="background:orange"></span> Comparing &nbsp;
+        <span class="leg" style="background:red"></span> Swapping &nbsp;
+        <span class="leg" style="background:green"></span> Sorted
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
