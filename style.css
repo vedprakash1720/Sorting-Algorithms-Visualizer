@@ -1,0 +1,101 @@
+body {
+  font-family: Arial, sans-serif;
+  padding: 20px;
+  background-color: #ffffff;
+}
+
+h2 {
+  text-align: center;
+}
+
+#algo-section {
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+#algo-section button {
+  margin: 4px;
+  padding: 6px 12px;
+  cursor: pointer;
+  border: 1px solid gray;
+  background: white;
+}
+
+#algo-section button.selected {
+  background-color: steelblue;
+  color: white;
+}
+
+#controls {
+  text-align: center;
+}
+
+#controls button {
+  margin: 4px;
+  padding: 6px 14px;
+  cursor: pointer;
+}
+
+#sortBtn {
+  background-color: steelblue;
+  color: white;
+  border: none;
+}
+
+#info-box {
+  text-align: center;
+  font-size: 14px;
+}
+
+#bar-container {
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  height: 280px;
+  border: 1px solid #ccc;
+  padding: 5px;
+  margin: 0 auto;
+  max-width: 850px;
+  background: #fafafa;
+}
+
+.bar-box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-end;
+  height: 100%;
+  flex: 1;
+  margin: 0 1px;
+}
+
+.bar-box span {
+  font-size: 8px;
+  margin-bottom: 2px;
+  color: #333;
+}
+
+.bar {
+  width: 100%;
+  background-color: steelblue;
+  min-height: 4px;
+}
+
+#status {
+  text-align: center;
+  color: gray;
+  font-size: 13px;
+}
+
+#legend {
+  text-align: center;
+  font-size: 13px;
+}
+
+.leg {
+  display: inline-block;
+  width: 12px;
+  height: 12px;
+  margin-right: 3px;
+  vertical-align: middle;
+}
